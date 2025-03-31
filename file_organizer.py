@@ -1,3 +1,31 @@
 import os
-import pathlib as path
+import shutil
 
+directory = os.path.join(os.path.expanduser("~"), "Downloads")
+
+extensions = {
+    ".jpg" : "Images",
+    ".png" : "Images",
+    ".jpeg": "Images",
+    ".gif": "Images",
+    ".wmv": "Videos",
+    ".mov": "Videos",
+    ".mp4": "Videos",
+    ".mpg": "Videos",
+    ".mpeg": "Videos",
+    ".mkv": "Videos",
+    ".iso": "Zips",
+    ".tar": "Zips",
+    ".gz": "Zips",
+    ".7z": "Zips",
+    ".dmg": "Zips",
+    ".rar": "Zips",
+    ".zip": "Zips",
+    ".mp3": "Music",
+    ".msv": "Music",
+    ".wave": "Music",
+    ".wma": "Music",
+    ".pdf": "Documents",
+    ".doc": "Documents",
+    ".txt": "Documents",
+}
