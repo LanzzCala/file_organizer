@@ -29,3 +29,13 @@ extensions = {
     ".pdf": "Documents",
     ".doc": "Documents",
 }
+
+for file in os.listdir(directory):
+    file_path = os.path.join(directory, file)
+    
+    if os.path.isfile(file_path):
+        extension = os.path.splitext(file_path)[1].lower()
+        
+        if extension in extensions:
+            file_name = extensions[extension]
+
