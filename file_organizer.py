@@ -2,7 +2,7 @@ import os
 import shutil
 from pathlib import Path
 
-directory = Path.home()/ "" #Specify directory path
+directory = Path.home()/ "Downloads" #Specify directory path
 
 extensions = {
     ".jpg" : "Images",
@@ -28,6 +28,7 @@ extensions = {
     ".wma": "Music",
     ".pdf": "Documents",
     ".doc": "Documents",
+    ".exe": "Executables",
 }
 #Iterate through each file in the specified directory
 for file in os.listdir(directory):
